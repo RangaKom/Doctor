@@ -1,9 +1,9 @@
-angular.module('Doctor', ['ui.bootstrap', 'ui.router', 'ngAnimate', 'home']);
+angular.module('Doctor', ['ui.bootstrap', 'ui.router', 'ngAnimate', 'home', 'pasient']);
 
 angular.module('Doctor').config(function($stateProvider, $urlRouterProvider) {
 
     /* Add New States Above */
-    $urlRouterProvider.otherwise('/dashboard');
+    $urlRouterProvider.otherwise('/home/dashboard');
 
 });
 
